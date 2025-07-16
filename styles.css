@@ -119,7 +119,7 @@ body {
 }
 
 .hero h1 {
-    font-size: 4rem;
+    font-size: 3.433rem;
     margin-bottom: 1.5rem;
     background: linear-gradient(45deg, var(--accent) 30%, #ffffff 70%);
     -webkit-background-clip: text;
@@ -180,6 +180,34 @@ body {
     font-size: 2.5rem;
     color: var(--accent);
     margin-bottom: 1rem;
+}
+
+/*projects */
+.projects {
+    padding: 5rem 5%;
+    background: var(--darker-bg);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.project-card {
+    padding: 2rem;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent);
+    box-shadow: 0 10px 30px var(--accent-glow);
 }
 
 /* Footer */
